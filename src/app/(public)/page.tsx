@@ -2,7 +2,13 @@ import { ModeToggle } from "@/components/mode-toggle";
 import SignIn from "@/components/sign-in";
 import { Button } from "@/components/ui/button";
 import { auth } from "@/lib/auth";
+import { Metadata } from "next";
 import Link from "next/link";
+
+export const metadata: Metadata = {
+  title: "SPS Padu Ceria",
+  description: "Sekolahkan anak kita di SPS Padu Ceria, sebelum masuk SD"
+}
 
 const HomePage = async () => {
   const session = await auth();
