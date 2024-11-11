@@ -13,7 +13,10 @@ const UserAvatar = async () => {
         <h2>{session.user.id}</h2>
         <h1>{session.user.name}</h1>
         <h1>{session.user.email}</h1>
+        <h1>{session.user.role}</h1>
         <p>{session.expires}</p>
+
+        {JSON.stringify(session.user)}
       </div>
     </>
   );
