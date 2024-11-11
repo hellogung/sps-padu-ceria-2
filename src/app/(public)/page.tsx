@@ -7,8 +7,8 @@ import Link from "next/link";
 
 export const metadata: Metadata = {
   title: "SPS Padu Ceria",
-  description: "Sekolahkan anak kita di SPS Padu Ceria, sebelum masuk SD"
-}
+  description: "Sekolahkan anak kita di SPS Padu Ceria, sebelum masuk SD",
+};
 
 const HomePage = async () => {
   const session = await auth();
@@ -17,8 +17,9 @@ const HomePage = async () => {
       <div className="container px-5 md:px-20">
         {!session ? (
           <>
-            <SignIn provider="github" text="Sign with Github" />
-            <SignIn provider="google" text="Sign with Google" />
+            <Button>
+              <Link href="/login">Login</Link>
+            </Button>
           </>
         ) : (
           <>
