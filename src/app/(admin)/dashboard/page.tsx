@@ -1,10 +1,16 @@
+import { APP_NAME } from "@/app/constant/const";
 import SignOut from "@/components/sign-out";
 import { Button } from "@/components/ui/button";
 import Unauthorize from "@/components/unauthorize";
 import UserAvatar from "@/components/user-avatar";
 import { auth } from "@/lib/auth";
+import { Metadata } from "next";
 import Link from "next/link";
-import { prisma } from "@/lib/prisma";
+
+export const metadata: Metadata = {
+  title: `Dashboard | ${APP_NAME}`,
+  description: "",
+};
 
 const DashboardPage = async () => {
   const session = await auth();

@@ -1,6 +1,5 @@
-import { signIn } from "@/lib/auth";
 import { Button } from "./ui/button";
-import { signInAction } from "@/actions/auth";
+import { signInAction } from "@/lib/actions";
 
 type Provider = "github" | "google";
 

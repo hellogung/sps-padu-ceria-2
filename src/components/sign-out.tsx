@@ -1,15 +1,12 @@
-import { signOut } from "@/lib/auth";
+"use client"
+
 import { Button } from "./ui/button";
-import { signOutAction } from "@/actions/auth";
+import { signOutAction } from "@/lib/actions";
 
 const SignOut = () => {
   return (
     <>
       <form
-        action={async () => {
-          "use server";
-          await signOut();
-        }}
         onSubmit={async (event) => {
           event.preventDefault();
           await signOutAction();

@@ -1,1 +1,1 @@
-export const APP_NAME = ".helloGung"
+export const APP_NAME = ".dummyApp"
