@@ -1,3 +1,10 @@
+import { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Contact",
+  description: "Sekolahkan anak kita di SPS Padu Ceria, sebelum masuk SD",
+};
+
 const ContactPage = () => {
     return (
       <>

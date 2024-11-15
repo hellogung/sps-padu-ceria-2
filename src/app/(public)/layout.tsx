@@ -10,7 +10,7 @@ export default function PublicLayout({
   return (
     <>
       <HeaderComponents />
-      <div className="container px-5 md:px-20 py-5 min-h-screen">
+      <div className="container min-h-screen pt-20">
         <PageAnimatePresenceComponent>{children}</PageAnimatePresenceComponent>
       </div>
       <FooterComponent />

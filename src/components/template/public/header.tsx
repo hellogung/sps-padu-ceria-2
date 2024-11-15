@@ -10,7 +10,7 @@ const HeaderComponents = async () => {
   const session = await auth();
   return (
     <>
-      <header className="flex items-center justify-around border py-4">
+      <header className="flex items-center justify-around border py-4 fixed top-0 w-full backdrop-blur-md">
         <LogoComponent className="text-2xl" />
         <MenuComponents menuProps={MenuList} />
         <div className="flex items-center gap-2">
