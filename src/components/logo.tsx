@@ -1,6 +1,6 @@
 "use client";
 
-import { APP_NAME } from "@/app/constant/const";
+import { APP_NAME } from "@/constant/const";
 import { AnimatePresence, motion } from "framer-motion";
 import Link from "next/link";
 
@@ -12,8 +12,8 @@ const LogoComponent = ({ className = "text-5xl" }: LogoProps) => {
   return (
     <>
       <h1 className="font-bold">
-        <Link href="/" className={className}>
-          {APP_NAME}
+        <Link id="logo" href="/" className={className}>
+          .{APP_NAME}
         </Link>
       </h1>
     </>

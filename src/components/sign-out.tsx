@@ -12,7 +12,7 @@ const SignOut = () => {
           await signOutAction();
         }}
       >
-        <Button variant={"destructive"} type="submit">
+        <Button variant={"link"} className="hover:no-underline" type="submit">
           Sign Out
         </Button>
       </form>

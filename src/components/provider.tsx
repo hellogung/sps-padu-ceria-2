@@ -9,10 +9,10 @@ type ProviderProps = {
 const ProviderPage = ({ text }: ProviderProps) => {
   return (
     <>
-      <SignIn className="w-full" variant={"outline"} provider="github">
+      {/* <SignIn className="w-full" variant={"outline"} provider="github">
         <FaGithub />
         {text} Github
-      </SignIn>
+      </SignIn> */}
       <SignIn className="w-full" variant={"outline"} provider="google">
         <FcGoogle /> {text} Google
       </SignIn>

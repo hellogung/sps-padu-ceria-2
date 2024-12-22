@@ -5,7 +5,7 @@ import { prisma } from "./prisma";
 import { redirect } from "next/navigation";
 
 export async function signInAction(provider: "github" | "google", redirect?: string) {
-    await authSignIn(provider, { redirectTo: redirect || "/dashboard" });
+    await authSignIn(provider, { redirectTo: redirect || "/panel/dashboard" });
 }
 
 export async function signOutAction(redirectTo = "/") {

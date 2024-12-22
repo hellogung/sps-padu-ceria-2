@@ -1,5 +1,5 @@
 import { Metadata } from "next";
-import { APP_NAME } from "@/app/constant/const";
+import { APP_NAME } from "@/constant/const";
 import LoginClientPage from "./login";
 
 export const metadata: Metadata = {

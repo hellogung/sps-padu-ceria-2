@@ -8,12 +8,12 @@ export default function PublicLayout({
   children: React.ReactNode;
 }) {
   return (
-    <>
+    <div className="font-serif">
       <HeaderComponents />
       <div className="container min-h-screen pt-20">
         <PageAnimatePresenceComponent>{children}</PageAnimatePresenceComponent>
       </div>
       <FooterComponent />
-    </>
+    </div>
   );
 }

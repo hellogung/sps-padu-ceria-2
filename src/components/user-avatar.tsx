@@ -19,7 +19,7 @@ const UserAvatar = async () => {
         <h1>{session.user.name}</h1>
         <h1>{session.user.email}</h1>
         <h1>{session.user.role}</h1>
-        <p>{session.expires}</p>
+        {/* <p>{session.expires}</p> */}
       </div>
     </>
   );

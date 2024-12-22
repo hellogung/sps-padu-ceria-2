@@ -1,4 +1,4 @@
-import { APP_NAME } from "@/app/constant/const";
+import { APP_NAME } from "@/constant/const";
 import { Metadata } from "next";
 import RegisterClientPage from "./register";
 

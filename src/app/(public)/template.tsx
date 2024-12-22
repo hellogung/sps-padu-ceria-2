@@ -15,7 +15,7 @@ const variantsOut = {
 const FramerHome = ({ children }: { children: React.ReactNode }) => {
   return (
     <>
-      <main className="px-5 md:px-20 py-5">{children}</main>
+      <main className="w-full md:w-4/5 mx-auto py-5">{children}</main>
 
       <motion.div
         key="slide-out"
@@ -23,8 +23,8 @@ const FramerHome = ({ children }: { children: React.ReactNode }) => {
         initial="initial"
         animate="animate"
         exit="exit"
-        transition={{ ease: "easeOut", duration: .75 }}
-        className="bg-gray-950 w-full h-screen fixed top-0 origin-top"
+        transition={{ ease: "easeOut", duration: .5 }}
+        className="bg-slate-800 dark:bg-slate-100 w-full h-screen fixed top-0 origin-top z-50"
       ></motion.div>
 
       <motion.div
@@ -33,8 +33,8 @@ const FramerHome = ({ children }: { children: React.ReactNode }) => {
         initial="initial"
         animate="animate"
         exit="exit"
-        transition={{ ease: "easeIn", duration: .75 }}
-        className="bg-gray-950 w-full h-screen fixed top-0 origin-bottom"
+        transition={{ ease: "easeIn", duration: .5 }}
+        className="bg-slate-800 dark:bg-slate-100 w-full h-screen fixed top-0 origin-bottom z-50"
       ></motion.div>
     </>
   );

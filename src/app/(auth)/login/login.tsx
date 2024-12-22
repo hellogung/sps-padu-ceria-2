@@ -5,7 +5,7 @@ import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
 import Link from "next/link";
 import { AnimatePresence, motion } from "framer-motion";
-import { APP_NAME } from "@/app/constant/const";
+import { APP_NAME } from "@/constant/const";
 import ProviderPage from "@/components/provider";
 import LogoComponent from "@/components/logo";
 
